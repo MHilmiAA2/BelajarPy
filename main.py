@@ -87,3 +87,39 @@
 
 # print(matematika.tambah(10, 5))
 # print(matematika.kali(10, 5))
+
+
+# Tahap 4 - Pemrograman Lanjut
+# File Handling (Membaca dan Menulis File)
+# Menulis File
+# with open("data.txt", "w") as f:
+#     f.write("Hallo, Kazuhiko!\n")
+
+# Membaca File
+# with open("data.txt", "r") as f:
+#     isi = f.read()
+#     print(isi)
+
+# Exception Handling (Menangani Error)
+# try:
+#     x = int(input("Masukkan angka :"))
+#     print("Hasil bagi 10 adalah :", 10/x)
+# except ValueError:
+#     print("Masukkan angka dengan benar!")
+# except ZeroDivisionError:
+#     print("Tidak bisa dibagi nol!")
+
+# List Comprehension - Cara singkat bikin list
+# angka = [i for i in range(1, 6)]
+# print(angka)
+
+# kuadrat = [i**2 for i in range(5)]
+# print(kuadrat)
+
+# Lambda Function (Fungsi Singkat)
+# kali = lambda a, b: a * b
+# print(kali(5, 10))
+
+# angka = [5, 3, 7, 1]
+# angka.sort(key=lambda x: x)
+# print(angka)
