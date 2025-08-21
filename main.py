@@ -19,36 +19,71 @@
 # print(x or y)  # True
 
 
-# Tahap 2
-# List = kumpulan data yang bisa diubah (mutable), ditandai dengan [].
-buah = ["Jeruk", "Apel", "Mangga"]
-print(buah[0])
-buah.append("Pisang")
-buah.remove("Apel")
-print(buah)
+# # Tahap 2
+# # List = kumpulan data yang bisa diubah (mutable), ditandai dengan [].
+# buah = ["Jeruk", "Apel", "Mangga"]
+# print(buah[0])
+# buah.append("Pisang")
+# buah.remove("Apel")
+# print(buah)
 
-# Tuple = mirip list, tapi tidak bisa diubah (immutable), ditandai dengan ().
-warna = ("Merah", "Biru", "Hijau")
-print(warna[1])
+# # Tuple = mirip list, tapi tidak bisa diubah (immutable), ditandai dengan ().
+# warna = ("Merah", "Biru", "Hijau")
+# print(warna[1])
 
-# Dictionary = data pasangan key → value, ditandai dengan {}.
-kontak = {
-    "Andi": "08123",
-    "Budi": "08456"
-}
-print(kontak["Budi"])
-kontak["Jujun"] = "08789"
-print(kontak)
+# # Dictionary = data pasangan key → value, ditandai dengan {}.
+# kontak = {
+#     "Andi": "08123",
+#     "Budi": "08456"
+# }
+# print(kontak["Budi"])
+# kontak["Jujun"] = "08789"
+# print(kontak)
 
-# Set = kumpulan data unik (tidak boleh duplikat), ditandai dengan {} tapi tanpa pasangan key-value.
-angka = {1, 2, 3, 4, 4}
-angka.add(5)
-print(angka)
+# # Set = kumpulan data unik (tidak boleh duplikat), ditandai dengan {} tapi tanpa pasangan key-value.
+# angka = {1, 2, 3, 4, 4}
+# angka.add(5)
+# print(angka)
 
-# Manipulasi String juga mirip list, karena bisa diakses per karakter.
-teks = "Python"
-print(teks[0])
-print(teks[-5])
-print(teks.upper())
-print(teks.lower())
-print(teks.replace("Py", "My"))
+# # Manipulasi String juga mirip list, karena bisa diakses per karakter.
+# teks = "Python"
+# print(teks[0])
+# print(teks[-5])
+# print(teks.upper())
+# print(teks.lower())
+# print(teks.replace("Py", "My"))
+
+
+# Tahap 3 - Fungsi & Modulasi
+# # Fungsi Dasar : Fungsi = blok kode yang bisa dipanggil berulang kali.
+# def halo():
+#     print("Halo, semua!")
+
+# halo()
+
+# # Fungsi Parameter : Parameter = data yang kita masukkan ke dalam fungsi.
+# def sapa(nama):
+#     print("Halo,", nama)
+
+# sapa("Danil")
+# sapa("Jujun")
+
+# # Fungsi dengan Return Value : Diisi dengan nilai
+# def tambah(a, b):
+#     return a + b
+
+# hasil = tambah(10, 5)
+# print("Hasil :", hasil)
+
+# # Parameter Default : Kalau parameter tidak diisi, maka akan diisi secara default
+# def sapa(nama="Semua"):
+#     print("Halo", nama)
+
+# sapa()
+# sapa("Ronal")
+
+# # Modularisasi : Kode yang dipisah
+# import matematika
+
+# print(matematika.tambah(10, 5))
+# print(matematika.kali(10, 5))
